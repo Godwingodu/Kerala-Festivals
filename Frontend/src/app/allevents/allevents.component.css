@@ -20,7 +20,6 @@ article a::after {
   content: "";
 }
 
-/* basic article elements styling */
 article h2 {
   margin: 0 0 18px 0;
   font-family: "Bebas Neue", cursive;
@@ -69,7 +68,6 @@ article a .icon {
   transition: all 0.3s;
 }
 
-/* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
   --img-scale: 1.1;
   --title-color: #28666e;
@@ -77,11 +75,6 @@ article:has(:hover, :focus) {
   --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-
-
-/************************ 
-  Generic layout (demo looks)
-  **************************/
 
 *,
 *::before,
@@ -151,9 +144,6 @@ body {
   white-space: nowrap;
   width: 1px;
 }
-
-
-
 
 
 * {
@@ -293,7 +283,6 @@ body {
   height: 1px;
 }
 
-/* Active state */
 .search-bar input:focus+.search-btn,
 .search-bar input:valid+.search-btn {
   background: #2762f3;
@@ -344,7 +333,6 @@ body {
     background: #a16f6f;
   }
 }
-
 
 h1 {
   font-size: 2.5rem;
