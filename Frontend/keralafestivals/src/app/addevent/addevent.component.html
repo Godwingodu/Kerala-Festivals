@@ -1,0 +1,69 @@
+<section class="vh-98 mt-5 pt-3" style="background-color: #eee;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-9 order-2 order-lg-1">
+                <h1 class="text-center h1 fw-bold mb-2 mx-1 mx-4 mb-4">Add Event</h1>
+                <form class="mx-1 mx-md-4" [formGroup]="addeventform" (ngSubmit)="addevent()">
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" class="form-control" name="username"
+                        formControlName="name" />
+                      <label class="form-label" for="form3Example1c">Event Name</label>
+                      <div class="alert alert-danger"
+                        *ngIf="addeventform.get('name')?.errors && addeventform.get('name')?.touched">
+                        invalid event name
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" class="form-control" name="password"
+                        formControlName="place" />
+                      <label class="form-label" for="form3Example4c">Place</label>
+                      <div class="alert alert-danger"
+                        *ngIf="addeventform.get('place')?.errors && addeventform.get('place')?.touched">
+                        invalid place
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="date" id="form3Example4c" class="form-control" name="event_date"
+                        formControlName="event_date" />
+                      <label class="form-label" for="form3Example4c">Date</label>
+                      <div class="alert alert-danger"
+                        *ngIf="addeventform.get('event_date')?.errors && addeventform.get('event_date')?.touched">
+                        invalid date
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mb-0">
+                      <textarea id="form3Example4c" class="form-control" name="description"
+                        formControlName="description"></textarea>
+                      <label class="form-label" for="form3Example4c">Description</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-2">
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="file" name="myInput" accept="image/*,video/*" multiple required id="form3Example4c"
+                        name="pic" formControlName="pic" (change)="onFileChange($event)">
+                      <br><label class="form-label" for="form3Example4c">Upload Photos</label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mx-4 mb-2 lg-4">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

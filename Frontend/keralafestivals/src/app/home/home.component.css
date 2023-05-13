@@ -1,0 +1,53 @@
+div {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: 0.5s ease-in;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+div.screen {
+  height: 50vh;
+  width: 100%;
+  box-shadow: 5px 15px 2rem #aaa;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: picture 6s infinite;
+  transition: 1s ease-in;
+}
+
+@keyframes picture {
+  0% {
+    background-image: url(https://i0.wp.com/dekochi.com/wp-content/uploads/2017/06/Kudamattam-Thrissur-Pooram-01.jpg?ssl=1);
+  }
+
+  50% {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/St._Joseph%27s_Parish_Shrine%2C_Pavaratty.jpg/1200px-St._Joseph%27s_Parish_Shrine%2C_Pavaratty.jpg);
+  }
+
+  100% {
+    background-image: url(https://i.ytimg.com/vi/Chnk0ZQDRpQ/maxresdefault.jpg);
+  }
+
+  /* 10% {
+      background-image: url(https://i.ytimg.com/vi/JOoIF2XPMqs/maxresdefault.jpg);
+
+    } */
+}
+
+@keyframes clippy {
+  from {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}

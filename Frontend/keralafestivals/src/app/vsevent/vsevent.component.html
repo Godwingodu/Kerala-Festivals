@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-8">
+      <div class="card mt-5  shadow-lg  mb-5 bg-body rounded">
+        <img *ngIf="specificevent.pic" src="{{specificevent.pic}}" class="card-img-top pt-1 pl-2 pr-2"
+          alt="Wild Landscape" width="10" height="450" />
+        <img *ngIf="!specificevent.pic"
+          src="https://images.news18.com/malayalam/uploads/2023/04/thrissur-pooram-1-16827841084x3.jpg"
+          class="card-img-top pt-1 pl-2 pr-2" alt="Wild Landscape" width="10" height="450" />
+        <div class="card-body">
+          <h5 class="card-title">Event Name: {{specificevent.name| titlecase }} </h5>
+          Date: {{specificevent.event_date}}
+          <p class="card-text">
+            Place: {{specificevent.place|titlecase}}<br>
+            Description: {{specificevent.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

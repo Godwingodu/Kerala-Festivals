@@ -1,0 +1,19 @@
+input {
+  width: 50%;
+  padding: 5px 20px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.invalid-input {
+  color: red;
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 25%;
+}
+
+#subscribe {
+  background-color: rgba(225, 221, 217, 0.805);
+  width: 100%;
+}
