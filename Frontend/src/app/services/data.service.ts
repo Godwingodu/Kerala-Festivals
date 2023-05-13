@@ -8,7 +8,7 @@ export class DataService {
   constructor() { }
 
   register(data: any) {
-    return fetch('http://127.0.0.1:8000/user/',
+    return fetch('https://kera-a-festivals.onrender.com/user/',
       {
         method: 'POST',
         body: JSON.stringify(data),
@@ -19,7 +19,7 @@ export class DataService {
   }
   //<--------------geting token---------------->
   getToken(data: any) {
-    return fetch('http://127.0.0.1:8000/tauth/',
+    return fetch('https://kera-a-festivals.onrender.com/tauth/',
       {
         method: 'POST',
         body: JSON.stringify(data),
@@ -32,7 +32,7 @@ export class DataService {
 
 
   getguestevents() {
-    return fetch('http://127.0.0.1:8000/gevent/',
+    return fetch('https://kera-a-festivals.onrender.com/gevent/',
       {
         method: 'GET',
         headers: {
@@ -42,7 +42,7 @@ export class DataService {
   }
 
   getevents() {
-    return fetch('http://127.0.0.1:8000/event/',
+    return fetch('https://kera-a-festivals.onrender.com/event/',
       {
         method: 'GET',
         headers: {
@@ -54,7 +54,7 @@ export class DataService {
   }
 
   addevents(formData: FormData) {
-    return fetch('http://127.0.0.1:8000/event/',
+    return fetch('https://kera-a-festivals.onrender.com/event/',
       {
         method: 'POST',
         body: formData,
@@ -65,7 +65,7 @@ export class DataService {
   }
 
   editevents(formData: FormData, id: any) {
-    return fetch(`http://127.0.0.1:8000/event/${id}/`,
+    return fetch(`https://kera-a-festivals.onrender.com/event/${id}/`,
       {
         method: 'PUT',
         body: formData,
@@ -76,7 +76,7 @@ export class DataService {
   }
 
   deleteevents(id: any) {
-    return fetch(`http://127.0.0.1:8000/event/${id}/`,
+    return fetch(`https://kera-a-festivals.onrender.com/event/${id}/`,
       {
         method: 'DELETE',
         headers: {
@@ -87,7 +87,7 @@ export class DataService {
   }
 
   getspecificevents(id: any) {
-    return fetch(`http://127.0.0.1:8000/event/${id}/`,
+    return fetch(`https://kera-a-festivals.onrender.com/event/${id}/`,
       {
         method: 'GET',
         headers: {
@@ -98,7 +98,7 @@ export class DataService {
   }
 
   getspecificguestevents(id: any) {
-    return fetch(`http://127.0.0.1:8000/gevent/${id}/`,
+    return fetch(`https://kera-a-festivals.onrender.com/gevent/${id}/`,
       {
         method: 'GET',
         headers: {
@@ -108,7 +108,7 @@ export class DataService {
   }
 
   subscribeduser(data: any) {
-    return fetch('http://127.0.0.1:8000/subscribeduser/',
+    return fetch('https://kera-a-festivals.onrender.com/subscribeduser/',
       {
         method: 'POST',
         body: JSON.stringify(data),
@@ -119,7 +119,7 @@ export class DataService {
   }
 
   booking() {
-    return fetch('http://127.0.0.1:8000/booking/',
+    return fetch('https://kera-a-festivals.onrender.com/booking/',
       {
         method: 'GET',
         headers: {
