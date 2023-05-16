@@ -25,4 +25,4 @@ def send_mail_func(self):
                 recipient_list=[to_mail],
                 fail_silently=True,
                 )
-    return " NEW Mail send Successfully to the subscribed users"
+    return "Mail send Successfully to the subscribed users"
