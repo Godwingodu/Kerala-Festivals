@@ -18,6 +18,7 @@ def send_mail_func(self):
             mail_subject="Kerala Festivals"
             message = f"""Dear {user.name},\n\nWe wanted to let you know about an upcoming festival that you may be interested in. The festival is {event.name} and it will be taking place on {event.event_date} at {event.place}.\n\nFor more information, please visit our website or contact us at support@keralafestivals.com.\n\nBest regards,\nThe Kerala-Festivals Team"""
             to_mail=user.email
+            print(to_mail)
             send_mail(
                 subject=mail_subject,
                 message=message,
