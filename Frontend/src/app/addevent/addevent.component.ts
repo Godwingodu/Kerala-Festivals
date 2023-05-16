@@ -38,7 +38,7 @@ export class AddeventComponent implements OnInit {
 
     this.ds.addevents(formData).then(res => {
       console.log(res);
-      alert("course added successfully")
+      alert("Event added successfully")
       this.r.navigate([''])
     })
       .catch(error => {
