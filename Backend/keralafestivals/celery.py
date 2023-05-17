@@ -15,16 +15,18 @@ def debug_task(self):
     print(f'Request: {self.request!r}')
 
 # <------ beat------->
-# app.conf.beat_schedule={
-#     'send-mail-every-day-at-8':{
-#         'task':'app.task.send_mail_func',
-#         'schedule':crontab(hour=22,minute=28),
-#     }
-
-    app.conf.beat_schedule = {
-    'my-task': {
-        'task': 'app.task.my_task',
+app.conf.beat_schedule={
+    'send-mail-every-day-at-8':{
+        'task':'app.task.send_mail_func',
         'schedule': 10  # Run the task every minute
+
+        # 'schedule':crontab(hour=1,minute=13),
     }
+
+    # app.conf.beat_schedule = {
+    # 'my-task': {
+    #     'task': 'app.task.my_task',
+    #     'schedule': 10  # Run the task every minute
+    # }
 }
 
