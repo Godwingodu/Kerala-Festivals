@@ -23,7 +23,7 @@ def debug_task(self):
 
     app.conf.beat_schedule = {
     'my-task': {
-        'task': 'myapp.tasks.my_task',
+        'task': 'app.tasks.my_task',
         'schedule': 60  # Run the task every minute
     }
 }
