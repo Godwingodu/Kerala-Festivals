@@ -167,7 +167,7 @@ DEFAULT_FROMEMAIL='Celery <godwinvinson69@gmail.com>'
 
 
 # <-------------celery---------->
-CELERY_BROKER_URL='redis://red-chfugou7avjbbjqiuksg:6379'
+CELERY_BROKER_URL=env('CELERY_BROKER_URL')
 CELERY_ACCEPT_CONTENT=['application/json']
 CELERY_RESULT_SERIALIZER='json'
 CELERY_TASK_SERIALIZER='json'
