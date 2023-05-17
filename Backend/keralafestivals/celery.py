@@ -18,9 +18,7 @@ def debug_task(self):
 app.conf.beat_schedule={
     'send-mail-every-day-at-8':{
         'task':'app.task.send_mail_func',
-        'schedule': 20  # Run the task every minute
-
-        # 'schedule':crontab(hour=1,minute=13),
+        'schedule':crontab(hour=2,minute=50),
     }
 
     # app.conf.beat_schedule = {
