@@ -14,13 +14,11 @@ def send_mail_func(self):
             mail_subject="Kerala Festivals"
             message = f"""Dear {user.name},\n\nWe wanted to let you know about an upcoming festival that you may be interested in. The festival is {event.name} and it will be taking place on {event.event_date} at {event.place}.\n\nFor more information, please visit our website or contact us at support@keralafestivals.com.\n\nBest regards,\nThe Kerala-Festivals Team"""
             to_mail=user.email
-            print(to_mail)
-            print("=======================================================")
             send_mail(
                 subject=mail_subject,
                 message=message,
                 from_email=settings.EMAIL_HOST_USER,
-                recipient_list='gvrandom2@gmail.com',
+                recipient_list=[to_mail],
                 fail_silently=True,
                 )
     return "====================Mail send Successfully to the subscribed users======================="
