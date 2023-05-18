@@ -20,11 +20,5 @@ app.conf.beat_schedule={
         'task':'app.task.send_mail_func',
         'schedule':crontab(hour=8,minute=0),
     }
-
-    # app.conf.beat_schedule = {
-    # 'my-task': {
-    #     'task': 'app.task.my_task',
-    #     'schedule': 10  # Run the task every minute
-    # }
 }
 
