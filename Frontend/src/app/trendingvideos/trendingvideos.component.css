@@ -1,12 +1,13 @@
 #small-dialog {
   max-width: 1400px;
-  margin: 40px auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
   position: relative;
 }
 
 div#small-dialog iframe {
   width: 100%;
-  height: 190px;
+  height: 200px;
   display: block;
 }
 
