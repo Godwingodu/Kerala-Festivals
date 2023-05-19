@@ -88,7 +88,7 @@ h1{
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     text-align: center;
-    min-height: 280px;
+    min-height: 220px;
     height: auto;
     border-radius: 10px;
     color: #fff;
