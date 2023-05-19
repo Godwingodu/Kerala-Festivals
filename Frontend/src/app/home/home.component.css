@@ -1,3 +1,35 @@
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      div.screen {
+        height: 30vh;
+        width: 100%;
+        box-shadow: 5px 15px 2rem #aaa;
+        background-color: #ffffff;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: picture 6s infinite;
+        transition: 1s ease-in;
+      }
+      }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      div.screen {
+        height: 50vh;
+        width: 100%;
+        box-shadow: 5px 15px 2rem #aaa;
+        background-color: #ffffff;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: picture 6s infinite;
+        transition: 1s ease-in;
+      }
+      }
+
+
+
 div {
   margin: 0;
   padding: 0;
@@ -11,17 +43,7 @@ body {
   height: 100vh;
 }
 
-div.screen {
-  height: 35vh;
-  width: 100%;
-  box-shadow: 5px 15px 2rem #aaa;
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: picture 6s infinite;
-  transition: 1s ease-in;
-}
+
 
 @keyframes picture {
   0% {
