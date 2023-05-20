@@ -43,6 +43,12 @@
           }
         
       }
+      
+    #button{
+      margin-left: 25%;   
+      margin-right: 25%;
+      font-size: x-small;
+  }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -89,6 +95,10 @@
           margin: 2rem 0;
         }
       }
+      
+    #button{
+   display: none;
+  }
     }
 
     * {
@@ -248,9 +258,4 @@
         width: 100%;
         margin: 0 0 2rem 0;
       }
-    }
-
-    #button{
-        margin-left: 47%;   
-        font-size: x-small;
     }
