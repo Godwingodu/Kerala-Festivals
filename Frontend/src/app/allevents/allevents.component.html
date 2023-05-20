@@ -36,9 +36,8 @@
       </figure>
       <div class="article-body">
         <h2>{{e.name|titlecase}}</h2>
-        <h6>{{e.event_date}}</h6>
+        <p>{{e.event_date}}
           <br>
-          <p>
           {{e.description | slice:0:90}} {{ e.description.length > 90 ? '...' : '' }}
         </p>
         <a (click)="vsevent($event)" id="{{e.id}}" class="read-more">
