@@ -109,6 +109,9 @@ body {
   .article-body p {
     display: none;
   }
+  .article-body a {
+    display: none;
+  }
 }
 
 @container card (min-width: 380px) {
