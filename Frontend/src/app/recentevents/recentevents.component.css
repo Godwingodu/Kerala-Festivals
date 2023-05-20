@@ -249,3 +249,8 @@
         margin: 0 0 2rem 0;
       }
     }
+
+    #button{
+      /* float: right; */
+margin-left: 39%;    /* margin-bottom: 5%; */
+    }
