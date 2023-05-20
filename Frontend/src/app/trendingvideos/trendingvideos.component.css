@@ -15,7 +15,6 @@ div#small-dialog iframe {
 
 h1 {
   font-size: 1.9rem;
-  font-family: 'Montserrat';
   font-weight: normal;
   color: #444;
   text-align: center;
@@ -38,9 +37,9 @@ div#small-dialog iframe {
   display: block;
 }
 
+
 h1 {
   font-size: 2.5rem;
-  font-family: 'Montserrat';
   font-weight: normal;
   color: #444;
   text-align: center;
