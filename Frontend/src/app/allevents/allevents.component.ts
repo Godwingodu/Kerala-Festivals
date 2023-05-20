@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Renderer2 } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -15,12 +15,17 @@ export class AlleventsComponent implements OnInit {
   filteredData: any = []
   currentDate = new Date();      // Get the current date
 
-  constructor(private ds: DataService, private r: Router) {
+  constructor(private ds: DataService, private r: Router,private renderer: Renderer2) {
   }
 
   ngOnInit():
     void {
     this.ds.getguestevents().then(r => r.json()).then(data => this.getdata(data))
+
+    const script = this.renderer.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '/assets/js/navbarexit.js';
+    this.renderer.appendChild(document.body, script);
   }
   getdata(data: any) {
     this.allevents = data
@@ -36,6 +41,7 @@ export class AlleventsComponent implements OnInit {
     let ids = did.target.id
     this.r.navigate(["VSevent", ids])
   }
+
 
   POSTS: any;
   page: number = 1;  //by opening which page needed to open
