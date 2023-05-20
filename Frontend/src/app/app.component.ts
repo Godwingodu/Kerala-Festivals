@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import { OnInit } from '@angular/core';
 
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   isAuthenticated: boolean = false;
   title = 'keralafestivals';
 
-  constructor(private r:Router)
+  constructor(private r:Router,private renderer: Renderer2)
   {
 
   }
@@ -38,6 +38,10 @@ export class AppComponent implements OnInit {
     //   }
 
     // }, 30000);
+    const script = this.renderer.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '/assets/js/navbar.js';
+    this.renderer.appendChild(document.body, script);
   }
 
 

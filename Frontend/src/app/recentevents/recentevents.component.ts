@@ -16,6 +16,7 @@ export class RecenteventsComponent implements OnInit {
   constructor(private ds:DataService,private renderer: Renderer2,private r:Router)
   {
   }
+  
 
   ngOnInit():
   void

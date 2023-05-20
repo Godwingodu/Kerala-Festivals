@@ -6,7 +6,6 @@ body{
 * {
 	margin: 0;
 	padding: 0;
-
 }
 i {
 	margin-right: 10px;
@@ -17,7 +16,7 @@ i {
 	color: #fff;
 }
 .navbar-mainbg{
-	background-color: #3a3c3e;
+	background-color: #5161ce;
 	padding: 0px;
 }
 #navbarSupportedContent{
@@ -36,9 +35,9 @@ i {
 	float: left;
 }
 #navbarSupportedContent ul li a{
-	color: rgba(172, 162, 162, 0.952);
+	color: rgba(255,255,255,0.5);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     display: block;
     padding: 20px 20px;
     transition-duration:0.6s;
@@ -46,7 +45,7 @@ i {
     position: relative;
 }
 #navbarSupportedContent>ul>li.active>a{
-	color: #353b40;
+	color: #5161ce;
 	background-color: transparent;
 	transition: all 0.7s;
 }
@@ -74,7 +73,7 @@ i {
 	left: 0px;
 	transition-duration:0.6s;
 	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	background-color: #f7eded;
+	background-color: #fff;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	margin-top: 10px;
@@ -84,7 +83,7 @@ i {
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	background-color: #f7eded;
+	background-color: #fff;
 	bottom: 10px;
 }
 .hori-selector .right{
@@ -100,7 +99,7 @@ i {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #353b40;
+    background-color: #5161ce;
 }
 .hori-selector .right:before{
 	bottom: 0;
