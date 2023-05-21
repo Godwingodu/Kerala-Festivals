@@ -21,8 +21,8 @@
                 <div class="back">
                     <div class="inner">
                         <p>{{e.place| titlecase }}</p>
-                        <a (click)="vsevent($event)" id="{{e.id}}" class="read-more">{{e.description | slice:0:90}} {{
-                            e.description.length > 90 ? '...' : '' }}</a>
+                        <a (click)="vsevent($event)" id="{{e.id}}" class="read-more">{{e.description | slice:0:80}} {{
+                            e.description.length > 80 ? '...' : '' }}</a>
                     </div>
                 </div>
             </div>
