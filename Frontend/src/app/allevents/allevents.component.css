@@ -18,6 +18,10 @@ display: none;
   margin-bottom: 3%;
 
 }
+.text{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 article {
   --img-scale: 1.001;

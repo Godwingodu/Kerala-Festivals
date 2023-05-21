@@ -32,14 +32,15 @@
     </select>
   </div>
 
-
-  <form action="" class="search-bar ml-3 ">
-    <h5 class="pt-2">Search here...</h5> <input type="search" [(ngModel)]="searchText" name="search" pattern=".*\S.*"
+<div class="text">
+  <form action="" class="search-bar ml-2 pr-0 ">
+    <h5 class="pt-1">Search here...</h5> <input type="search" [(ngModel)]="searchText" name="search" pattern=".*\S.*"
       required>
     <button class="search-btn mr-5" type="submit">
       <span>Search</span>
     </button>
   </form>
+</div>
 
   <button id="button" type="button" class="btn btn-outline-secondary btn-lg pl-2 pr-2 pt-1 pb-1"
     routerLink="/booking">Book
