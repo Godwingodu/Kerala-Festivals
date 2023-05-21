@@ -3,6 +3,11 @@
 display: none;
 }
 }
+@media only screen and (min-width: 600px) {
+  .mobile{
+  display: none;
+  }
+  }
 
 .filter{
   margin-top: 5%;
