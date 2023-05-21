@@ -13,7 +13,7 @@
 
 .container td {
     font-weight: normal;
-    font-size: .7em;
+    font-size: .88em;
     -webkit-box-shadow: 0 2px 2px -2px #0E1119;
     -moz-box-shadow: 0 2px 2px -2px #0E1119;
     box-shadow: 0 2px 2px -2px #0E1119;
@@ -24,7 +24,7 @@
 .container {
     text-align: left;
     overflow: hidden;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: table;
     padding: 0 0 8em 0;
