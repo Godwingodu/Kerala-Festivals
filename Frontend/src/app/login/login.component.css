@@ -12,3 +12,8 @@ h1 {
     color: #444;
     text-align: center;
 }
+
+#login{
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
