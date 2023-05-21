@@ -1,5 +1,6 @@
 <h1 class="mt-5 text-center ">All Programmes</h1>
-<div>
+<!-- --desktop mode-- -->
+<div class="desktop">
   <div class="row">
     <div class="col-4 pt-5 pl-5  ml-5 d-flex justify-content-center">
       Filter:-
@@ -22,6 +23,30 @@
     </div>
   </div>
 </div>
+<!-- moble mode -->
+<div class="filter">
+Filter:-
+<select (change)="onTableSizeChange($event)">
+  <option *ngFor="let size of tableSizes">{{size}}</option>
+</select>
+</div>
+
+
+<form action="" class="search-bar ">
+  <h5 class="pt-2">Search here...</h5> <input type="search" [(ngModel)]="searchText" name="search"
+    pattern=".*\S.*" required>
+  <button class="search-btn " type="submit">
+    <span>Search</span>
+  </button>
+</form>
+
+<button type="button" class="btn btn-outline-secondary btn-lg pl-2 pr-2 pt-1 pb-1" routerLink="/booking">Book
+  Programmes</button>
+
+
+
+
+
 <section class="articles">
   <article class=" " *ngFor="let e of filteredData |filter:searchText | paginate:{
       itemsPerPage:tableSize,
