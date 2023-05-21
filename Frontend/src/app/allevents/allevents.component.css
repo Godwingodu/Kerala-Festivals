@@ -8,6 +8,11 @@ display: none;
   margin-top: 5%;
   margin-left: 10%;
 }
+#button{
+  margin-left: 50%;
+  margin-bottom: 3%;
+
+}
 
 article {
   --img-scale: 1.001;
