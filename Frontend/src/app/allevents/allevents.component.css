@@ -22,7 +22,6 @@ article a::after {
 
 article h2 {
   margin: 0 0 18px 0;
-  font-family: "Bebas Neue", cursive;
   font-size: 1.9rem;
   letter-spacing: 0.06em;
   color: var(--title-color);
@@ -85,7 +84,6 @@ article:has(:hover, :focus) {
 body {
   margin: 0;
   padding: 48px 0;
-  font-family: "Figtree", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
   background-image: linear-gradient(45deg, #7c9885, #b5b682);
@@ -337,7 +335,6 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Montserrat';
   font-weight: normal;
   color: #444;
   text-align: center;
