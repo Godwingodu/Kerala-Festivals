@@ -28,10 +28,11 @@ export class RecenteventsComponent implements OnInit {
     this.renderer.appendChild(document.body, script);
   }
 
+
   getdata(data:any)
   {
     this.recentevents=data
-    this.recentevents.sort((a:any,b:any) => Date.parse(b.event_date) - Date.parse(a.event_date));
+    this.recentevents.sort((a:any,b:any) => Date.parse(a.event_date) - Date.parse(b.event_date));
     console.log(this.recentevents)
 
   // Filter the data to get only the items from the current date onwards

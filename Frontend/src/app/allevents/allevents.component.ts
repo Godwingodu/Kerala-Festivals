@@ -18,6 +18,7 @@ export class AlleventsComponent implements OnInit {
   constructor(private ds: DataService, private r: Router,private renderer: Renderer2) {
   }
 
+  
   ngOnInit():
     void {
     this.ds.getguestevents().then(r => r.json()).then(data => this.getdata(data))
