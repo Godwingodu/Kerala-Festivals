@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit():
   void {
-    // this.checkAuthStatus();
+    this.checkAuthStatus();
 
     // setTimeout(() => {
     //   if (localStorage.getItem("token")) {
