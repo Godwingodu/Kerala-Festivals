@@ -19,24 +19,24 @@ export class AppComponent implements OnInit {
   void {
     this.checkAuthStatus();
 
-    // setTimeout(() => {
-    //   if (localStorage.getItem("token")) {
+    setTimeout(() => {
+      if (localStorage.getItem("token")) {
         
-    //     if (confirm("Do you want to add Event")) {
-    //       this.r.navigate(["addevent"])
-    //     } else {
-    //       alert("Thanks for visiting the page")
-    //     }
-    //   }
-    //   else {
-    //     if (confirm("Do you want to add Event")) {
-    //       this.r.navigate(["login"])
-    //     } else {
-    //       alert("Thanks for visiting the page")
-    //     }
-    //   }
+        if (confirm("Do you want to add Event")) {
+          this.r.navigate(["addevent"])
+        } else {
+          alert("Thanks for visiting the page")
+        }
+      }
+      else {
+        if (confirm("Do you want to add Event")) {
+          this.r.navigate(["login"])
+        } else {
+          alert("Thanks for visiting the page")
+        }
+      }
 
-    // }, 30000);
+    }, 30000);
     const script = this.renderer.createElement('script');
     script.type = 'text/javascript';
     script.src = '/assets/js/navbar.js';
