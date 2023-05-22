@@ -16,11 +16,21 @@ export class AlleventsComponent implements OnInit {
   currentDate = new Date();      // Get the current date
 
   constructor(private ds: DataService, private r: Router,private renderer: Renderer2) {
+
   }
 
   
   ngOnInit():
+  
     void {
+      if (!localStorage.getItem('foo')) { 
+        localStorage.setItem('foo', 'no reload') 
+        location.reload() 
+      } else {
+        localStorage.removeItem('foo') 
+      }
+    
+
     this.ds.getguestevents().then(r => r.json()).then(data => this.getdata(data))
 
     const script = this.renderer.createElement('script');

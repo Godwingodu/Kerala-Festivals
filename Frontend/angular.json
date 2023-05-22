@@ -30,7 +30,9 @@
             ],
             "scripts": [
               "src/assets/js/recentevents.js",
-              "src/assets/js/booking.js"
+              "src/assets/js/booking.js",
+              "src/assets/js/navbar.js"
+
 
 
 

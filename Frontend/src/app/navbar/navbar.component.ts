@@ -1,5 +1,7 @@
 import { Component,Renderer2 } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -10,7 +12,7 @@ import { OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   isAuthenticated: boolean = false;
 
-  constructor(private renderer: Renderer2)
+  constructor(private renderer: Renderer2,private r:Router)
   {
   }
 
@@ -37,5 +39,11 @@ export class NavbarComponent implements OnInit {
     localStorage.removeItem('token')
     location.assign("");
   }
+  navigate(to:any)
+   {
+    this.r.navigate([to]);
+    // window.location.reload()
+  }
+
 }
 
