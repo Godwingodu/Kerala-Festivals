@@ -37,10 +37,11 @@ export class AppComponent implements OnInit {
     //   }
 
     // }, 30000);
-    const script = this.renderer.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '/assets/js/navbar.js';
-    this.renderer.appendChild(document.body, script);
+
+    // const script = this.renderer.createElement('script');
+    // script.type = 'text/javascript';
+    // script.src = '/assets/js/navbar.js';
+    // this.renderer.appendChild(document.body, script);
   }
 
   checkAuthStatus() {
