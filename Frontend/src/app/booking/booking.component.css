@@ -35,13 +35,14 @@
     padding-bottom: 2%;
     padding-top: 2%;
     padding-left: 2%;
-    padding-right: 15%;
+    padding-right: 2%;
 }
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
     background-color: #323C50;
 }
+
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
@@ -51,6 +52,7 @@
 .container th {
     background-color: #1F2739;
 }
+
 
 .container td {
     color: #d1cccc;
