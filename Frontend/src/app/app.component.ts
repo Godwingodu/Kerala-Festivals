@@ -43,8 +43,6 @@ export class AppComponent implements OnInit {
     this.renderer.appendChild(document.body, script);
   }
 
-
-
   checkAuthStatus() {
     // Check if the user is authenticated
     if (localStorage.getItem('token')) {
@@ -53,11 +51,6 @@ export class AppComponent implements OnInit {
       this.isAuthenticated = false;
     }
   }
-  
-
- 
-
-
   
   logout()
   {

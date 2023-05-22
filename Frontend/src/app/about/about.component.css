@@ -23,7 +23,7 @@ ul {
   list-style: none;
 }
 
-.site-heading h2 {
+.site-heading h2,h2 {
   display: block;
   font-weight: 700;
   margin-bottom: 10px;
@@ -212,12 +212,12 @@ ul {
   text-transform: uppercase;
 }
 
-.team-area .social li.twitter a {
-  background-color: #00b6f1;
+.team-area .social li.linkedin a {
+  background-color: #1ab7ea;
 }
 
-.team-area .social li.pinterest a {
-  background-color: #bd081c;
+.team-area .social li.whatsapp a {
+  background-color: #14c10e;
 }
 
 .team-area .social li.facebook a {
@@ -233,7 +233,7 @@ ul {
 }
 
 .team-area .social li.instagram a {
-  background-color: #cd486b;
+  background-color: #c12a52;
 }
 
 p {
