@@ -9,12 +9,13 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  constructor(private fb: FormBuilder, private r: Router, private ds: DataService) {   if (!localStorage.getItem('foo')) { 
-    localStorage.setItem('foo', 'no reload') 
-    location.reload() 
-  } else {
-    localStorage.removeItem('foo') 
-  }
+  constructor(private fb: FormBuilder, private r: Router, private ds: DataService) {
+  //   if (!localStorage.getItem('foo')) { 
+  //   localStorage.setItem('foo', 'no reload') 
+  //   location.reload() 
+  // } else {
+  //   localStorage.removeItem('foo') 
+  // }
   }
 
   regsform = this.fb.group({

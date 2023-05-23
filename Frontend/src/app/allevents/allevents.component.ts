@@ -23,12 +23,7 @@ export class AlleventsComponent implements OnInit {
   ngOnInit():
   
     void {
-      if (!localStorage.getItem('foo')) { 
-        localStorage.setItem('foo', 'no reload') 
-        location.reload() 
-      } else {
-        localStorage.removeItem('foo') 
-      }
+   
     
 
     this.ds.getguestevents().then(r => r.json()).then(data => this.getdata(data))
