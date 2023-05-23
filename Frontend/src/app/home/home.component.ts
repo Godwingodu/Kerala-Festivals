@@ -10,11 +10,6 @@ import { Component} from '@angular/core';
 export class HomeComponent {
   constructor()
   {
-    if (!localStorage.getItem('foo')) { 
-      localStorage.setItem('foo', 'no reload') 
-      location.reload() 
-    } else {
-      localStorage.removeItem('foo') 
-    }
+   
   }
 }
