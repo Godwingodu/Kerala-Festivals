@@ -58,9 +58,5 @@ export class AppComponent implements OnInit {
     localStorage.removeItem('token')
     location.assign("");
   }
-  navigate(to:any)
-  {
-   this.r.navigate([to]);
-   // window.location.reload()
- }
+
 }
