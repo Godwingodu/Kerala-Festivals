@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
         }
       }
 
-    }, 30000);
+    }, 60000);
     const script = this.renderer.createElement('script');
     script.type = 'text/javascript';
     script.src = '/assets/js/navbar.js';
