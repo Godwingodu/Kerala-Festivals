@@ -11,7 +11,12 @@ import { DataService } from '../services/data.service';  //gettingtoken
 export class LoginComponent {
   //<-----reactive forms----------->
   constructor(private fb: FormBuilder, private r: Router, private ds: DataService) {
-
+    if (!localStorage.getItem('foo')) { 
+      localStorage.setItem('foo', 'no reload') 
+      location.reload() 
+    } else {
+      localStorage.removeItem('foo') 
+    }
   }
 
   logform = this.fb.group({

@@ -8,12 +8,6 @@ import { OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  collapsed = true;
-  toggleCollapsed(): void {
-    this.collapsed = !this.collapsed;
-  }
-
-  
   isAuthenticated: boolean = false;
   title = 'keralafestivals';
 

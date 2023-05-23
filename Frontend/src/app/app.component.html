@@ -1,12 +1,9 @@
-<!-- <nav class="navbar navbar-expand-custom navbar-mainbg">
+<nav class="navbar navbar-expand-custom navbar-mainbg">
     <a class="navbar-brand navbar-logo" routerLink="">Kerala Festivals</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-       aria-expanded="false" aria-label="Toggle navigation"
-       (click)="toggleCollapsed()">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
     </button>
-    <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
             <li class="nav-item ">
@@ -35,43 +32,6 @@
               </li>
         </ul>
     </div>
-</nav> -->
- <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Kerala Festivals</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-       aria-expanded="false" aria-label="Toggle navigation"
-       (click)="toggleCollapsed()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
-        <ul class="navbar-nav ml-auto">
-            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-            <li class="nav-item ">
-                <a class="nav-link" href="" ><i class="fa-solid fa-house"></i>Home</a>
-            </li>
-              <li class="nav-item">
-                  <a class="nav-link" href='allevents' hrefActive="active" *ngIf="!isAuthenticated"><i class="fa-regular fa-calendar-plus"></i>All Events</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link" href="login" *ngIf="!isAuthenticated"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="register" *ngIf="!isAuthenticated"><i class="fa-solid fa-user-plus"></i>Register</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="addevent" *ngIf="isAuthenticated"><i class="fa-regular fa-calendar-plus"></i>Add Event</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="mgviewallevents" *ngIf="isAuthenticated"><i class="fa-solid fa-calendar-week"></i>  View Events</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="about"><i class="far fa-copy"></i>About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link"  (click)="logout()" *ngIf="isAuthenticated"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
-              </li>
-        </ul>    </div> 
 </nav>
 <!-- <app-navbar></app-navbar> -->
 <router-outlet></router-outlet>
