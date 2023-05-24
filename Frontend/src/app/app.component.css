@@ -165,3 +165,6 @@ i {
 		left: -25px;
 	}
 }
+.logout {
+    cursor: pointer;
+}

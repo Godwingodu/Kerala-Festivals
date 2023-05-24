@@ -19,24 +19,6 @@ export class AppComponent implements OnInit {
   void {
     this.checkAuthStatus();
 
-var something = (function() {
-
-    var executed = false;
-
-    return function() {
-
-        if (!executed) {
-
-            executed = true;
-
-            alert("hi")
-
-        }
-
-    };
-
-})();
-
     setTimeout(() => {
       if (localStorage.getItem("token")) {
         
