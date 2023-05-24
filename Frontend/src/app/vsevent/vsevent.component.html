@@ -10,7 +10,7 @@
           class="card-img-top pt-1 pl-2 pr-2" alt="Wild Landscape"  />
         <div class="card-body">
           <h5 class="card-title">Event Name: {{specificevent.name| titlecase }} </h5>
-          Date: {{specificevent.event_date}}
+          Date: {{specificevent.event_date | date:'dd-MM-yyyy'}}
           <p class="card-text">
             Place: {{specificevent.place|titlecase}}<br>
             Description: {{specificevent.description}}

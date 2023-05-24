@@ -63,7 +63,7 @@
       </figure>
       <div class="article-body">
         <h2>{{e.name|titlecase}}</h2>
-        <p class="pb-2">{{e.event_date}}
+        <p class="pb-2">{{e.event_date | date:'dd-MM-yyyy'}}
           <br>
           {{e.description | slice:0:90}} {{ e.description.length > 90 ? '...' : '' }}
         </p>
