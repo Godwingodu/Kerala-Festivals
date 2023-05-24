@@ -49,6 +49,16 @@ export class AddeventComponent implements OnInit {
 
   ngOnInit(): void {
     this.authentication()
+
+    var nave = localStorage.getItem("addevents")
+    if (nave != "navbar") {
+      location.reload()
+    }
+    localStorage.setItem('addevents','navbar')
+
+    setTimeout(() => {
+      localStorage.removeItem('addevents')
+    }, 300);
   }
 
   authentication() {

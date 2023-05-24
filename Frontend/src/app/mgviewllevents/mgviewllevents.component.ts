@@ -20,6 +20,16 @@ export class MgviewlleventsComponent implements OnInit {
     void {
     this.authentication()
     this.ds.getevents().then(r => r.json()).then(data => this.getdata(data))
+
+    var nave = localStorage.getItem("mgviewallevents")
+    if (nave != "navbar") {
+      location.reload()
+    }
+    localStorage.setItem('mgviewallevents','navbar')
+
+    setTimeout(() => {
+      localStorage.removeItem('mgviewallevents')
+    }, 300);
   }
 
   getdata(data: any) {
