@@ -29,7 +29,7 @@ export class AlleventsComponent implements OnInit {
 
     setTimeout(() => {
       localStorage.removeItem('allevents')
-    }, 10);
+    }, 100);
 
     
 
