@@ -10,12 +10,16 @@ import { DataService } from '../services/data.service';
 })
 export class RegisterComponent {
   constructor(private fb: FormBuilder, private r: Router, private ds: DataService) {
-  //   if (!localStorage.getItem('foo')) { 
-  //   localStorage.setItem('foo', 'no reload') 
-  //   location.reload() 
-  // } else {
-  //   localStorage.removeItem('foo') 
-  // }
+    var nave = localStorage.getItem("register")
+    if (nave != "navbar") {
+      location.reload()
+    }
+    localStorage.setItem('register','navbar')
+
+    setTimeout(() => {
+      localStorage.removeItem('register')
+    }, 10);
+
   }
 
   regsform = this.fb.group({

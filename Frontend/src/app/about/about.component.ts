@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   constructor() {  
+    var nave = localStorage.getItem("about")
+    if (nave != "navbar") {
+      location.reload()
+    }
+    localStorage.setItem('about','navbar')
+
+    setTimeout(() => {
+      localStorage.removeItem('about')
+    }, 100);
 
   }
 }
