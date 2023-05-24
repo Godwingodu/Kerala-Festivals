@@ -15,7 +15,7 @@ export class AboutComponent {
 
     setTimeout(() => {
       localStorage.removeItem('about')
-    }, 100);
+    }, 300);
 
   }
 }

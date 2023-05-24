@@ -18,7 +18,7 @@ export class RegisterComponent {
 
     setTimeout(() => {
       localStorage.removeItem('register')
-    }, 100);
+    }, 300);
 
   }
 
