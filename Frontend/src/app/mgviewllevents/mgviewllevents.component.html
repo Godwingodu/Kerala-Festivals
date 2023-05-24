@@ -67,9 +67,9 @@
           <br>
           {{e.description | slice:0:90}} {{ e.description.length > 90 ? '...' : '' }}
         </p>
-        <div clss="bottom_aligner">
-          <a class=" btn mr-5 ml-4" (click)="editevent(e.id)"><i class="fas fa-edit"></i> Edit</a>
-          <a class="btn" (click)="deleteevent(e.id)"><i class="fa fa-trash"></i> Delete</a>
+        <div class="bottom_aligner">
+          <a class="btn1" (click)="editevent(e.id)"><i class="fas fa-edit"></i> Edit</a>
+          <a class="btn2" (click)="deleteevent(e.id)"><i class="fa fa-trash"></i> Delete</a>
         </div>
       </div>
     </div>
