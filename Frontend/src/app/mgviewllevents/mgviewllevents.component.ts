@@ -16,6 +16,7 @@ export class MgviewlleventsComponent implements OnInit {
   constructor(private ds: DataService, private r: Router) {
   }
 
+  
   ngOnInit():
     void {
     this.authentication()
