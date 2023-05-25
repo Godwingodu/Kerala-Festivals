@@ -25,8 +25,6 @@ def send_mail_func(self):
                 fail_silently=True,
                 )
     return "========================Mail send Successfully to the subscribed users======================="
-
-@shared_task(bind=True)
 def page(self):
     print("started")
     return "========================Page loaded======================="
