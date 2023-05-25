@@ -26,6 +26,6 @@ def debug_task(self):
 app.conf.beat_schedule={
     'pageloaded':{
         'task':'pageloaded',
-        'schedule':100,
+        'schedule':20,
     }
 }
