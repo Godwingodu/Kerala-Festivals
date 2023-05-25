@@ -28,4 +28,5 @@ from datetime import timedelta
 
 @shared_task(bind=True)
 def pageloaded(self):
+    print("started")
     return "========================Page loaded======================="
