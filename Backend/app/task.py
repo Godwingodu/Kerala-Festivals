@@ -25,6 +25,8 @@ def send_mail_func(self):
                 fail_silently=True,
                 )
     return "========================Mail send Successfully to the subscribed users======================="
-# def page(self):
-#     print("started")
-#     return "========================Page loaded======================="
+
+
+@shared_task(bind=True)
+def pageloadevery14minutes(self):
+    return "========================Page load every 14 minutes======================="
