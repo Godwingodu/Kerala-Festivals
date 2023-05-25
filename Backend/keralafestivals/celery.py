@@ -16,16 +16,16 @@ def debug_task(self):
 
 
 # <------ beat------->
-app.conf.beat_schedule={
-    'send-mail-every-day-at-8':{
-        'task':'app.task.send_mail_func',
-        'schedule':crontab(hour=8,minute=0),
-    }
-}
+# app.conf.beat_schedule={
+#     'send-mail-every-day-at-8':{
+#         'task':'app.task.send_mail_func',
+#         'schedule':crontab(hour=8,minute=0),
+#     }
+# }
 
 app.conf.beat_schedule={
     'pageloaded':{
         'task':'pageloaded',
-        'schedule':600,
+        'schedule':100,
     }
 }
