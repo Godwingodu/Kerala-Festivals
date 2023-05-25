@@ -26,6 +26,6 @@ app.conf.beat_schedule={
 app.conf.beat_schedule={
     'pageloadevery14minutes':{
         'task':'app.task.pageloadevery14minutes',
-        'schedule':10,
+        'schedule':840,
     }
 }
