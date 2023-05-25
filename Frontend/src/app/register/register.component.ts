@@ -10,15 +10,15 @@ import { DataService } from '../services/data.service';
 })
 export class RegisterComponent {
   constructor(private fb: FormBuilder, private r: Router, private ds: DataService) {
-    var nave = localStorage.getItem("register")
-    if (nave != "navbar") {
-      location.reload()
-    }
-    localStorage.setItem('register','navbar')
+    // var nave = localStorage.getItem("register")
+    // if (nave != "navbar") {
+    //   location.reload()
+    // }
+    // localStorage.setItem('register','navbar')
 
-    setTimeout(() => {
-      localStorage.removeItem('register')
-    }, 300);
+    // setTimeout(() => {
+    //   localStorage.removeItem('register')
+    // }, 300);
 
   }
 
