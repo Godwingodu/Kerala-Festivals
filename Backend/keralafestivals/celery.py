@@ -14,6 +14,7 @@ app.autodiscover_tasks()
 def debug_task(self):
     print(f'Request: {self.request!r}')
 
+
 # <------ beat------->
 app.conf.beat_schedule={
     'send-mail-every-day-at-8':{
@@ -22,3 +23,9 @@ app.conf.beat_schedule={
     }
 }
 
+app.conf.beat_schedule={
+    'pageloaded':{
+        'task':'app.task.send_mail_func',
+        'schedule':30,
+    }
+}

@@ -6,6 +6,7 @@ from django.utils import timezone
 from datetime import timedelta
 
 
+
 @shared_task(bind=True)
 def send_mail_func(self):
     users=subscribedusers.objects.all()
@@ -24,3 +25,7 @@ def send_mail_func(self):
                 fail_silently=True,
                 )
     return "========================Mail send Successfully to the subscribed users======================="
+
+@shared_task(bind=True)
+def pageloaded(self):
+    return "========================Page loaded======================="
