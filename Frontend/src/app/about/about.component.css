@@ -246,3 +246,8 @@ p {
     color: #444;
     text-align: center;
   } */
+
+  .img-fluid{
+height: auto;
+width: 100%;
+}
