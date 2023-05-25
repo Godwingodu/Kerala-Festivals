@@ -27,6 +27,6 @@ from datetime import timedelta
 #     return "========================Mail send Successfully to the subscribed users======================="
 
 @shared_task(bind=True)
-def pageloaded(self):
+def page(self):
     print("started")
     return "========================Page loaded======================="
