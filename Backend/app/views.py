@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import viewsets,status
 from rest_framework import authentication,permissions
 from django.core.mail import send_mail
-from app.task import *
+from app.task import pageloaded
 
 class EventModelView(viewsets.ModelViewSet):
     models=Events
