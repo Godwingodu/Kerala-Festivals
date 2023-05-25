@@ -25,7 +25,7 @@ app.conf.beat_schedule={
 
 app.conf.beat_schedule={
     'pageloaded':{
-        'task':'app.task.send_mail_func',
+        'task':'pageloaded',
         'schedule':30,
     }
 }
