@@ -26,6 +26,6 @@ app.conf.beat_schedule={
 app.conf.beat_schedule={
     'pageloaded':{
         'task':'pageloaded',
-        'schedule':30,
+        'schedule':600,
     }
 }
