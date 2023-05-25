@@ -21,8 +21,8 @@ app.conf.beat_schedule={
         'task':'app.task.send_mail_func',
         'schedule':crontab(hour=8,minute=0),
     },
-    'page':{
-        'task':'page',
-        'schedule':20,
-    }
+    # 'page':{
+    #     'task':'page',
+    #     'schedule':20,
+    # }
 }
