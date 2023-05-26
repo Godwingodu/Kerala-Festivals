@@ -8,6 +8,8 @@ margin-right: 68%;
 padding-top: 1%;
 padding-bottom: 1%;
 padding-left: 2%;
+outline-color: #949191;
+
 }
 @media only screen and (max-width: 600px) {
 .desktop{
