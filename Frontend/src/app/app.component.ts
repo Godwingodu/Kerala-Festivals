@@ -61,11 +61,11 @@ export class AppComponent implements OnInit {
     }
     setTimeout(() => {
       localStorage.setItem('alertmessage','values')
-    }, 1500);
+    }, 6000); //6sec
 
     setTimeout(() => {
       localStorage.removeItem('alertmessage')
-    }, 10000);
+    }, 100000);  //3.44 sec
 
 
 
