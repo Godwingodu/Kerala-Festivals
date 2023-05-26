@@ -16,6 +16,7 @@ export class MgviewlleventsComponent implements OnInit {
   constructor(private ds: DataService, private r: Router) {
   }
 
+
   
   ngOnInit():
     void {
@@ -43,9 +44,14 @@ export class MgviewlleventsComponent implements OnInit {
   }
 
   deleteevent(id: any) {
-    this.ds.deleteevents(id)
-    alert("Event deleted succesfully")
-    location.reload()
+    if (confirm("Do you want to Delete Event")) {
+      this.ds.deleteevents(id)
+      alert("Event deleted succesfully")
+      location.reload()    
+    } else {
+      // alert("Thanks for visiting the page")
+    }
+ 
   }
 
   editevent(id: any) {
