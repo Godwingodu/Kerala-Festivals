@@ -52,7 +52,7 @@ article a::after {
 
 article h2 {
   margin: 0 0 6px 0;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   letter-spacing: 0.06em;
   color: var(--title-color);
   transition: color 0.3s ease-out;
