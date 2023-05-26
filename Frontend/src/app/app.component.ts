@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
           alert("Thanks for visiting the page")
         }
       }
-    }, 27000); //30 sec
+    }, 54000); //30 sec
     }
     setTimeout(() => {
       localStorage.setItem('alertmessage','values')
@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       localStorage.removeItem('alertmessage')
-    }, 100000);  //3.44 sec
+    }, 150000);  //3.44 sec
 
 
 
