@@ -25,7 +25,7 @@
 </div>
 <!-- moble mode -->
 <div class="mobile">
-  <div class="filter">
+  <div class="filter" id="fil">
     Filter:-
     <select (change)="onTableSizeChange($event)">
       <option *ngFor="let size of tableSizes">{{size}}</option>
