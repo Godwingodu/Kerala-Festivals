@@ -1,3 +1,6 @@
+#date{
+  font-size: 1.1rem;
+}
 @media only screen and (max-width: 600px) {
   .desktop{
   display: none;
@@ -51,8 +54,8 @@ article a::after {
 
 /* basic article elements styling */
 article h2 {
-  margin: 0 0 18px 0;
-  font-size: 1.9rem;
+  margin: 0 0 6px 0;
+  font-size: 1.8rem;
   letter-spacing: 0.06em;
   color: var(--title-color);
   transition: color 0.3s ease-out;

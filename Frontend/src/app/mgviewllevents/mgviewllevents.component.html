@@ -63,9 +63,8 @@
       </figure>
       <div class="article-body">
         <h2>{{e.name|titlecase}}</h2>
-        <p class="pb-2">{{e.event_date | date:'dd-MM-yyyy'}}
-          <br>
-          {{e.description | slice:0:90}} {{ e.description.length > 90 ? '...' : '' }}
+        <p id="date">{{e.event_date | date:'dd-MM-yyyy'}}</p>
+          <p>{{e.description | slice:0:90}} {{ e.description.length > 90 ? '...' : '' }}
         </p>
         <div class="bottom_aligner">
           <a class="btn1" (click)="editevent(e.id)"><i class="fas fa-edit pr-1"></i> Edit</a>
