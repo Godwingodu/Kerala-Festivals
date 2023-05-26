@@ -38,9 +38,10 @@ export class AppComponent implements OnInit {
 
     // }, 60000);
 
-    var nave = localStorage.getItem("alert")
-    if (nave != "navbar") {
-          setTimeout(() => {
+
+    var nave = localStorage.getItem("alertmessage")
+    if (nave != "values") {
+     setTimeout(() => {
       if (localStorage.getItem("token")) {
         
         if (confirm("Do you want to add Event")) {
@@ -56,15 +57,17 @@ export class AppComponent implements OnInit {
           alert("Thanks for visiting the page")
         }
       }
-
-    }, 5400);
-        
-        }
-    localStorage.setItem('alert','navbar')
+    }, 9000); //10 sec
+    }
+    setTimeout(() => {
+      localStorage.setItem('alertmessage','values')
+    }, 1500);
 
     setTimeout(() => {
-      localStorage.removeItem('alert')
-    }, 18000);
+      localStorage.removeItem('alertmessage')
+    }, 10000);
+
+
 
 
     const script = this.renderer.createElement('script');

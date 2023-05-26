@@ -10,14 +10,14 @@ import { Component} from '@angular/core';
 export class HomeComponent {
   constructor()
   {
-    var nave = localStorage.getItem("register")
-    if (nave != "navbar") {
+    var nave = localStorage.getItem("home")
+    if (nave != "values") {
       location.reload()
     }
-    localStorage.setItem('register','navbar')
+    localStorage.setItem('home','values')
 
     setTimeout(() => {
-      localStorage.removeItem('register')
+      localStorage.removeItem('home')
     }, 300);
 
   }
