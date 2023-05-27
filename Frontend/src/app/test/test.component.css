@@ -1,6 +1,4 @@
-body {
-    overflow: hidden;
-  }
+
   #scrolling-text {
     white-space: nowrap;
     overflow-x: hidden;
@@ -22,5 +20,7 @@ body {
   }
 #scroll{
     background-color: rgb(218, 214, 221);
+    overflow: hidden;
+
 
 }
