@@ -27,6 +27,6 @@ def send_mail_func(self):
     return "========================Mail send Successfully to the subscribed users======================="
 
 
-@shared_task(bind=True)
-def pageloadevery14minutes(self):
-    return "========================Page load every 14 minutes======================="
+# @shared_task(bind=True)
+# def pageloadevery14minutes(self):
+#     return "========================Page load every 14 minutes======================="
