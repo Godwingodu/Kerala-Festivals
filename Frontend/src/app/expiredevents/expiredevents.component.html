@@ -24,8 +24,8 @@
   </div>
 </div>
 <!-- moble mode -->
-<div class="mobile">
-  <div class="filter">
+<div class="mobile" >
+  <div class="filter" id="fil">
     Filter:-
     <select (change)="onTableSizeChange($event)">
       <option *ngFor="let size of tableSizes">{{size}}</option>
@@ -62,8 +62,8 @@
       </figure>
       <div class="article-body">
         <h2>{{e.name|titlecase}}</h2>
-        <p class="pb-2">{{e.event_date | date:'dd-MM-yyyy'}}
-          <br>
+        <p id="date">{{e.event_date | date:'dd-MM-yyyy'}}</p>
+          <p>
           {{e.description | slice:0:90}} {{ e.description.length > 90 ? '...' : '' }}
         </p>
         <div class="bottom_aligner">
