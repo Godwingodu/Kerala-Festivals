@@ -1,26 +1,36 @@
 
-  #scrolling-text {
-    white-space: nowrap;
-    overflow-x: hidden;
-    position: relative;
-    animation: scroll-right 10s linear infinite;
+
+
+.header-wrapper .header-primary {
+    background: #F6F6F6;
+    height: 40px;
+    transition: height .15s ease-in-out;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  background: rgb(218, 214, 221);
+  width: 100%;
+}
+
+.wrapper {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 12s linear infinite;
+}
+
+.usp{
+      color: #1c303f;
+    line-height: 40px;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
-
-  #scrolling-text:hover {
-    animation-play-state: paused;
+  100% {
+    transform: translate(-1300px, 0);
   }
-
-  @keyframes scroll-right {
-    0% {
-      right: -100%;
-    }
-    100% {
-      right: 0;
-    }
-  }
-#scroll{
-    background-color: rgb(218, 214, 221);
-    overflow: hidden;
-
-
 }
