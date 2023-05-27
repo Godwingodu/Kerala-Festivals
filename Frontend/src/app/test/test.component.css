@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+  }
+  #scrolling-text {
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    animation: scroll-right 10s linear infinite;
+  }
+
+  #scrolling-text:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-right {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+#scroll{
+    background-color: rgb(218, 214, 221);
+
+}
