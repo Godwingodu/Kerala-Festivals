@@ -1,4 +1,18 @@
 <h1 class="mt-5 text-center mb-2">Book Programmes</h1>
+<!-- mobile version -->
+<div class="text" id="mobile">
+    <form action="" class="search-bar ml-2 pr-0 ">
+      <h5 class="pt-1">Search here...</h5> <input type="search" [(ngModel)]="searchText" name="search" pattern=".*\S.*"
+        required>
+      <button class="search-btn mr-5" type="submit">
+        <span>Search</span>
+      </button>
+    </form> 
+  </div>
+  <!-- desktop version -->
+  <div class="row" id="desktop">
+    <div class="col"></div>
+    <div class="col-3">
 <div class="text">
     <form action="" class="search-bar ml-2 pr-0 ">
       <h5 class="pt-1">Search here...</h5> <input type="search" [(ngModel)]="searchText" name="search" pattern=".*\S.*"
@@ -8,6 +22,11 @@
       </button>
     </form> 
   </div>
+</div>
+  <div class="col"></div>
+</div>
+
+
 <table class="container mb-5">
     <thead>
         <tr>
