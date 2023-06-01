@@ -5,7 +5,7 @@ class Events(models.Model):
     name=models.CharField(max_length=50)
     place=models.CharField(max_length=50)
     event_date=models.DateField()
-    description=models.TextField(max_length=500,default="Nill")
+    description=models.TextField(max_length=1000,default="Nill")
     pic=models.ImageField(upload_to="festival_images",null=True)
     date=models.DateField(auto_now_add=True)
 
